@@ -5,8 +5,8 @@ describe('webpack.base.js test case', () => {
   const baseConfig = require('../../lib/webpack.base.js');
 
   it('entry', () => {
-    assert.ok(baseConfig.entry.index, '/mnt/d/lyCode/jike-webpack/builder-webpack/test/smoke/template/src/index/index.js');
-    assert.ok(baseConfig.entry.search, '/mnt/d/lyCode/jike-webpack/builder-webpack/test/smoke/template/src/search/index.js');
+    assert.ok(baseConfig.entry.index.indexOf('builder-webpack/test/smoke/template/src/index/index.js') > -1, true);
+    assert.ok(baseConfig.entry.search.indexOf('builder-webpack/test/smoke/template/src/search/index.js') > -1, true);
   });
 });
  
